@@ -1,12 +1,12 @@
 # Network Traffic Monitor
 
-This script is a quick tool for monitoring network traffic and identifying HTTP and HTTPS websites visited on your local network. It utilizes 'Scapy' to sniff packets and analyze web traffic on common web ports.
+This script is a quick tool for monitoring network traffic and identifying HTTP and HTTPS websites visited on your local network. It utilizes `Scapy` to sniff packets and analyze web traffic on common web ports.
 
 ---
 
 ## Features
 
-- **HTTP Traffic**: Extracts and displays the 'Host' header from HTTP traffic on ports 80 and 8080.
+- **HTTP Traffic**: Extracts and displays the `Host` header from HTTP traffic on ports 80 and 8080.
 - **HTTPS Traffic**: 
   - Attempts to extract the Server Name Indication (SNI) during the TLS handshake.
   - Falls back to resolving the hostname using reverse DNS if SNI is unavailable.
@@ -28,13 +28,13 @@ This script is a quick tool for monitoring network traffic and identifying HTTP 
 
 This script requires the following Python packages:
 
-- 'scapy': For packet sniffing and analysis.
-- 'psutil': For detecting network interfaces.
-- 'socket': For DNS lookups (built-in Python module).
+- `scapy`: For packet sniffing and analysis.
+- `psutil`: For detecting network interfaces.
+- `socket`: For DNS lookups (built-in Python module).
 
-Install the necessary packages using 'pip':
+Install the necessary packages using `pip`:
 
-'pip install scapy psutil'
+`pip install scapy psutil`
 
 ---
 
@@ -50,7 +50,7 @@ Install the necessary packages using 'pip':
 
 ## Example Output
 
-'Detected network interfaces:
+`Detected network interfaces:
 1. eth0
 2. wlan0
 Do you want to sniff on all interfaces? (y/n): y
@@ -58,7 +58,7 @@ Listening on interfaces: eth0, wlan0...
 
 HTTP Website: example.com
 HTTPS Website (SNI): secure.example.com
-HTTPS Resolved Hostname: api.example.com'
+HTTPS Resolved Hostname: api.example.com`
 
 ---
 

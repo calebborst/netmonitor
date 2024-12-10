@@ -50,7 +50,8 @@ Install the necessary packages using `pip`:
 
 ## Example Output
 
-`Detected network interfaces:
+```
+Detected network interfaces:
 1. eth0
 2. wlan0
 Do you want to sniff on all interfaces? (y/n): y
@@ -59,7 +60,7 @@ Listening on interfaces: eth0, wlan0...
 HTTP Website: example.com
 HTTPS Website (SNI): secure.example.com
 HTTPS Resolved Hostname: api.example.com`
-
+```
 ---
 
 Keeping in mind all might break...
